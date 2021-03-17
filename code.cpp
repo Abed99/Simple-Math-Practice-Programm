@@ -68,11 +68,11 @@ int main() {
 	}
 
 int ans=0;
-cout<<"\nEnter Your Anser : "<<endl;
+cout<<"\nEnter Your Answer : "<<endl;
 cin>>ans;
 if(ans==sum)
 	cout<<"true"<<endl;
 else
-	cout<<"false The Anser is "<<sum<<endl;
+	cout<<"false The Answer is "<<sum<<endl;
 return 0;
 }
