@@ -4,13 +4,37 @@ using std::cin;
 using std::cout;
 using std::endl;
 int main() {
+
+		char op='a';
+		cout<<"Enter Operater ( + or - or / or * ) : ";
+		cin>>op;
+
+	while(true)
+	{
 	int a=0 ,b=0 , c=0,d=0,first=0,second=0,third=0,fourth=0,z=0;
 	int temp1=0 ,temp2=0 , temp3=0 , temp4=0 ;
 	srand(time(0));
-	int x=rand()%10;
-	int y=rand()%10;
-	int sum=x+y;
-	cout<<x<<" + "<<y<<" = "<<endl;
+	int x=rand()%100;
+	int y=rand()%100;
+
+	int sum=0;
+
+	if(op=='-')
+		sum=x-y;	
+	else if(op=='+')
+		sum=x+y;	
+	else if(op=='*')
+		sum=x*y;	
+	else if(op=='/')
+		sum=x/y;	
+	else
+	{
+		cout<<"Unknown  Operater, Operater set to + ."<<endl;
+		sum=x+y;
+		op='+';
+	}
+
+	cout<<x<<" "<<op<<" "<<y<<" = "<<endl;
 
 
 	a=sum-3;
@@ -32,7 +56,7 @@ int main() {
 			break;
 	}
 
- //	Display answers randomly
+	//	Display answers randomly
 	int counter=0;
 	while(counter!=4)
 	{
@@ -67,12 +91,20 @@ int main() {
 		}
 	}
 
-int ans=0;
-cout<<"\nEnter Your Answer : "<<endl;
-cin>>ans;
-if(ans==sum)
-	cout<<"true"<<endl;
-else
-	cout<<"false The Answer is "<<sum<<endl;
+	int ans=0;
+	cout<<"\nEnter Your Answer : "<<endl;
+	cin>>ans;
+	if(ans==sum)
+	{
+		cout<<"==>true<=="<<endl;
+		cout<<"------------------------------"<<endl;
+	}
+
+	else
+	{
+		cout<<"false, The Answer is "<<sum<<endl;
+		cout<<"------------------------------"<<endl;
+	}
+	}
 return 0;
 }
