@@ -5,7 +5,7 @@ using std::cout;
 using std::endl;
 int main() {
 
-		char op='a';
+		char op='\0';
 		cout<<"Enter Operater ( + or - or / or * ) : ";
 		cin>>op;
 
