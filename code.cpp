@@ -44,7 +44,7 @@ int main() {
 
 
 //If the answers are equal
-	while(1)
+	while(true)
 	{
 		if(a==b || a==c || a==d)
 			a+=1;
