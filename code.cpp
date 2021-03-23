@@ -96,7 +96,7 @@ int main() {
 	cin>>ans;
 	if(ans==sum)
 	{
-		cout<<"==>true<=="<<endl;
+		cout<<"==true=="<<endl;
 		cout<<"------------------------------"<<endl;
 	}
 
